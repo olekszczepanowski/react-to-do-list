@@ -1,0 +1,76 @@
+*{
+    box-sizing: border-box;
+    font-family:"Roboto Slab", serif;
+    margin: 0;
+}
+body {
+    background: rgb(114,118,122);
+    background: radial-gradient(circle, rgba(114,118,122,1) 20%, rgba(255,255,255,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    margin: 0.3em;
+    font-size: 50px;
+}
+#to-do-list{
+    margin:0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+}
+#input-container{
+    display: flex;
+    justify-content: center;
+    min-width: 100%;
+    margin: 0.6em;
+    border: 3px solid black;
+    border-radius: 35px;
+    padding: 0.2em;
+}
+#input-container input{
+    border: none;
+    background-color: transparent;
+    margin: 1%;
+}
+#text-input{
+    min-width: 60%;
+}
+#text-input::placeholder{
+    color: black;
+}
+#tasks-list, #completed-tasks-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+    margin: 0.9em;
+}
+#tasks-list ul, #completed-tasks-list ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+    flex-direction: column;
+    list-style-type: none;
+    margin: 0.6em;
+    padding: 0;
+}
+#tasks-list li, #completed-tasks-list li{
+    display: flex;
+    min-width: 100%;
+    justify-content: center;
+    border: 3px solid black;
+    margin: 0.2em;
+    border-radius: 35px;
+}
+.task-name{
+    padding: 0.2em;
+    margin: 0.3em;
+    min-width: 75%;
+}
