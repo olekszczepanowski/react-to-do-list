@@ -10,6 +10,7 @@ function ToDoList(){
         const newTask = {name: taskName, date:taskDate};
 
         setTasks(t => [...t, newTask])
+        
     }
 
     function addToCompletedList(index){
@@ -33,7 +34,7 @@ function ToDoList(){
 
     return(<div id= "to-do-list">
         <h1>Bro get ur grind done</h1>
-        <div id="input-container">
+        <div id="input-container" className="colorful-mode-input">
             <input type="text" placeholder="Type in your task!" id="text-input" onChange={changeName}></input>
             <input type="date" id="calendar-input" onChange={changeDate}></input>
             <button id="btn-task-add" onClick={addTask}><span class="material-symbols-outlined">add</span></button>
